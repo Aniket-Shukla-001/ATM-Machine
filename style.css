@@ -1,0 +1,107 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Euro_coins_and_banknotes_%28cropped%29.jpg/800px-Euro_coins_and_banknotes_%28cropped%29.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.atm-container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    width: 350px;
+    text-align: center;
+}
+
+.atm-header {
+    margin-bottom: 20px;
+}
+
+.atm-header h1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.screen {
+    background-color: #282828;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 1.1rem;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #00b4d8;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    flex: 1;
+}
+
+button:hover {
+    background-color: #0096c7;
+}
+
+.input-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: #0077b6;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #023e8a;
+}
+
+@media screen and (max-width: 400px) {
+    .atm-container {
+        width: 90%;
+    }
+}
