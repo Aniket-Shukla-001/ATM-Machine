@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Machine</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="atm-container">
+        <div class="atm-header">
+            <h1>ATM Machine</h1>
+        </div>
+        <div class="screen">
+            <p id="message">Welcome! Please select an option.</p>
+        </div>
+        <div class="buttons">
+            <button onclick="checkBalance()">Check Balance</button>
+            <button onclick="deposit()">Deposit</button>
+            <button onclick="withdraw()">Withdraw</button>
+        </div>
+        <div class="input-area">
+            <input type="number" id="amount" placeholder="Enter amount" min="1">
+            <button class="submit-btn" onclick="submitAmount()">Submit</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
